@@ -1,5 +1,5 @@
 :root {
-  --c-primary: #3c373e;
+  --c-primary: #1e1e1f;
 }
 * {
   box-sizing: border-box;
@@ -8,7 +8,6 @@
 }
 
 body {
-  min-height: 100vh;
   background: var(--c-primary);
 }
 
@@ -82,6 +81,10 @@ h2 {
   }
 }
 
+.cont-table {
+  max-height: 100vh;
+}
+
 table th,
 td {
   padding: 20px;
@@ -91,8 +94,13 @@ table thead {
   background: var(--c-primary);
 }
 
+table tbody {
+  background: #ffffff !important;
+  height: 100px;
+}
+
 table tbody tr {
-  color: #736f6e;
+  color: #e3e3e3;
 }
 
 table tbody tr:hover {
