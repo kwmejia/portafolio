@@ -1,0 +1,112 @@
+:root {
+  --c-primary: #3c373e;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--c-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  background: var(--c-primary);
+  text-align: left;
+  border-collapse: collapse;
+  min-width: 600px;
+  border-radius: 10px;
+  color: #eee;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 15vmin;
+  position: absolute;
+}
+
+.border-wavy {
+  color: var(--c-primary);
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.cont-wave {
+  position: relative;
+  height: 150px;
+}
+.wave {
+  color: #09f;
+  animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 47%,
+      10% 48%,
+      33% 54%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+table th,
+td {
+  padding: 20px;
+}
+
+table thead {
+  background: var(--c-primary);
+}
+
+table tbody tr {
+  color: #736f6e;
+}
+
+table tbody tr:hover {
+  color: #0099ff;
+}
+
+table tbody tr:hover a {
+  color: #fafafa;
+}
+
+table tbody tr:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+table tr:hover td {
+  background: rgba(255, 255, 255, 0.1);
+}
